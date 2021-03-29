@@ -4,17 +4,20 @@
   "description": "A Twitter clone using MERN",
   "main": "app.js",
   "scripts": {
-    "start":"node app.js",
-    "server":"nodemon app.js"
-    
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "server:debug": "nodemon --inspect app.js"
   },
   "author": "Ray Wu",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "concurrently": "^6.0.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
     "mongoose": "^5.12.2",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
